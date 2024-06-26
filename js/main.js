@@ -23,6 +23,8 @@ let showMenu = false;
 let throttleTimeout = null;
 const THROTTLE_DELAY = 500;
 let isScrolling = false;
+let touchStartY = 0;
+let touchEndY = 0;
 
 menuBtn.addEventListener('click', toggleMenu);
 downBtns.forEach(btn => btn.addEventListener('click', scrollDown))
