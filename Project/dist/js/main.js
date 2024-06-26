@@ -23,6 +23,8 @@ let showMenu = false;
 let throttleTimeout = null;
 const THROTTLE_DELAY = 500;
 let isScrolling = false;
+let touchStartY = 0;
+let touchEndY = 0;
 
 menuBtn.addEventListener('click', toggleMenu);
 downBtns.forEach(btn => btn.addEventListener('click', scrollDown))
@@ -76,6 +78,25 @@ function scrollUp()
     }
 
     setCurrentPage(currentPage-1);
+}
+
+
+function handleTouchStart(event) {
+    touchStartY = event.touches[0].clientY;
+}
+
+function handleTouchMove(event) {
+    touchEndY = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+
+    if (touchStartY > touchEndY) {
+        scrollDown();
+    } else if (touchStartY < touchEndY) {
+        scrollUp();
+    }
+
 }
 
 function scrollToPage(pg)
@@ -154,7 +175,6 @@ function setPageOnLoad()
 
 function scrollLeft()
 {
-    console.log("left");
     setGallery(-1);
 }
 

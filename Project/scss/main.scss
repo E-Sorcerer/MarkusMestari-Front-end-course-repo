@@ -67,7 +67,7 @@ main {
         {
             display: grid;
             grid-template-areas: 
-            'p1 p1 . . .'
+            'p1 p1 p1 . .'
             '. p2 p2 p2 .'
             '. . p3 p3 p3';
 
@@ -118,7 +118,6 @@ main {
 
     .indent
     {
-        margin-left: 7.5vh;
         color: $secondary-color;
     }
 }
