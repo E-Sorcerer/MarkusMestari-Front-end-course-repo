@@ -175,7 +175,6 @@ function setPageOnLoad()
 
 function scrollLeft()
 {
-    console.log("left");
     setGallery(-1);
 }
 
