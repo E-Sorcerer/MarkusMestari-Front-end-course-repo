@@ -1,0 +1,130 @@
+
+
+.menu-btn
+{
+    position:absolute;
+    z-index:3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include easeOut;
+
+    .btn-line
+    {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: set-text-color($primary-color);
+        @include easeOut;
+    }
+
+    &.close
+    {
+            transform: rotate(180deg);
+
+            .btn-line
+            {
+                &:nth-child(1)
+                {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                &:nth-child(2)
+                {
+                    opacity: 0;
+                }
+                
+                &:nth-child(3)
+                {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
+            }
+    }
+}
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+
+    &.show
+    {
+        visibility: visible;
+    }
+
+
+    &-nav
+    {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 30vw;
+        height: 10vh;
+        overflow: hidden;
+
+        column-gap: 0.5rem;
+
+        margin: 0 10vw 0 0;
+        padding: 0;
+        background: darken($primary-color, 5);
+        list-style: none;
+        transform: translate3d(200%, 0, 0);
+        @include easeOut;
+
+        &.show
+        {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .nav-item
+    {
+        opacity: 0;
+        @include easeOutSlowly;
+        font-size: 1rem;
+
+        &.show
+        {
+            opacity: 1;
+        }
+
+        &.current > a
+        {
+            color: $secondary-color;
+        }
+
+        &#home
+        {
+            
+        }
+    }
+
+    .nav-link
+    {
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 300;
+        color: set-text-color($primary-color);
+        text-decoration: none;
+        @include easeOut;
+        
+        &:hover
+        {
+            color:$secondary-color;
+        }
+    }
+}
+
+
+@for $i from 1 through 4
+{
+    .nav-item:nth-child(#{$i})
+    {
+        transition-delay: 0.1s * $i;
+    }
+}

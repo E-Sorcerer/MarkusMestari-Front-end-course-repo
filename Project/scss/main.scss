@@ -1,0 +1,280 @@
+@import 'config';
+@import 'menu';
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color); 
+    height: 100%;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+
+// Headings
+h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+        margin:0.1rem;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+main {
+    
+    min-height: calc(100vh - 60px);
+
+    &#home {
+        overflow: hidden;
+    }
+
+    #first-page
+    {
+        h1 
+        {
+            margin-top: 20vh;
+        }
+
+        .grid
+        {
+            display: grid;
+            grid-template-areas: 
+            'p1 p1 . . .'
+            '. p2 p2 p2 .'
+            '. . p3 p3 p3';
+
+            #part1
+            {
+                grid-area: p1;
+            }
+            #part2
+            {
+                grid-area: p2;
+            }
+            #part3
+            {
+                grid-area: p3;
+            }
+        }
+
+    }
+
+    
+}
+
+#second-page
+{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    h1 
+    {
+        font-size: 4rem;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        text-align: center;
+        text-decoration: underline $secondary-color;
+        
+    }
+
+    h2 
+    {
+        background: rgba(lighten($primary-color, 2), 0.5);
+        color: $secondary-color;
+    }
+
+    video 
+    {
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .indent
+    {
+        margin-left: 7.5vh;
+        color: $secondary-color;
+    }
+}
+
+#third-page
+{
+    padding: 0;
+    h1 
+    {
+        margin-left: 2rem;
+        color: $secondary-color;
+    }
+
+    &:nth-child(1)
+    {
+        transform: translateX(0vw);
+    }
+    &:nth-child(2)
+    {
+        transform: translateX(50vw);
+    }
+    &:nth-child(1)
+    {
+        transform: translateX(100vw);
+    }
+    &:nth-child(1)
+    {
+        transform: translateX(150vw);
+    }
+    &:nth-child(1)
+    {
+        transform: translateX(-50vw);
+    }
+    
+    .gallery-image
+    {
+        display: block;
+    }
+
+    .image-container
+    {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        transition: transform 0.5s, filter 0.5s;
+        max-height: calc(100vh - #{$h1-height}*2);
+        background-color: #333;
+        img
+        {
+            max-height: 80vh;
+        }
+    }
+} 
+
+
+
+.page
+{
+    position: relative;
+    padding: 4rem;
+    height: 100vh;
+
+}
+
+.down-button
+{
+    position:absolute;
+    right:50vw;
+    left:auto;
+    bottom: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+
+    &:hover{
+        @include easeOut;
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}
+
+.up-button
+{
+    position:absolute;
+    right:50vw;
+    left:auto;
+    top: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+
+    &:hover{
+        @include easeOut;
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+    z-index:3;
+}
+
+.pics
+{
+    display: flex wrap;
+    flex-direction: row;
+    gap: 50vw;
+}
+
+
+#left
+{
+    rotate: -90deg;
+}
+
+#right
+{
+    rotate: 90deg;
+}
+
+.left-button
+{
+    position:absolute;
+    top:50vh;
+    left: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+    display: block;
+    z-index: 3;
+
+    &:hover{
+        @include easeOut;
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}
+
+.right-button
+{
+    position:absolute;
+    top:50vh;
+    right: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+    float: right;
+    z-index: 30;
+
+    &:hover{
+        @include easeOut;
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}
+
+video
+{
+    height: 75vh;
+}
+
+
+
+@import 'mobile';
