@@ -78,6 +78,25 @@ function scrollUp()
     setCurrentPage(currentPage-1);
 }
 
+
+function handleTouchStart(event) {
+    touchStartY = event.touches[0].clientY;
+}
+
+function handleTouchMove(event) {
+    touchEndY = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+
+    if (touchStartY > touchEndY) {
+        scrollDown();
+    } else if (touchStartY < touchEndY) {
+        scrollUp();
+    }
+
+}
+
 function scrollToPage(pg)
 {
     if (pg < 0)
