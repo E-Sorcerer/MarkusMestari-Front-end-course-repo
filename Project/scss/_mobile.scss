@@ -84,14 +84,17 @@
             text-align: center;
             padding-top: 5vh;
         }
+
         ul 
         {
             margin: 0;
             padding: 0;
+            max-height: 80vh;
+            list-style: none;
         }
         li
         {
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
 
         .grid
@@ -113,17 +116,9 @@
         .indent
         {
             margin-left: 4vh;
-            color: cyan;
+            text-decoration: underline;
         }
-        ul
-        {
-            max-height: 80vh;
-            list-style: none;
-        }
-        li
-        {
-            font-size: 0.75rem;
-        }
+
 
             #li1{
                 grid-area: li1;
