@@ -138,8 +138,9 @@ function setPaddingForImages() {
 
         image.style.paddingLeft = paddingValue + "px";
         image.style.paddingRight = paddingValue + "px";
-        setPageOnLoad();
     });
+    setPageOnLoad();
+    setGallery(-1);
 }
 
 // Set the current page value based on scroll in case the user reloads the page
@@ -167,7 +168,7 @@ window.addEventListener('load', () => {
     const containers = document.querySelectorAll('.small');
     containers.forEach(container => {
         const containerHeight = container.clientHeight *0.01; //Convert to VH
-        container.style.padding = `${40-(containerHeight*0.5)}vh`, 0, 0, 0 ;
+        container.style.padding = `${20-(containerHeight*0.5)}vh`, 0, 0, 0 ;
     });
 });
 

@@ -132,27 +132,13 @@ main {
         color: $secondary-color;
     }
 
-    &:nth-child(1)
+    .pics
     {
-        transform: translateX(0vw);
+        display: flex wrap;
+        flex-direction: row;
+        gap: 50vw;
     }
-    &:nth-child(2)
-    {
-        transform: translateX(50vw);
-    }
-    &:nth-child(1)
-    {
-        transform: translateX(100vw);
-    }
-    &:nth-child(1)
-    {
-        transform: translateX(150vw);
-    }
-    &:nth-child(1)
-    {
-        transform: translateX(-50vw);
-    }
-    
+
     .gallery-image
     {
         display: block;
@@ -218,12 +204,6 @@ main {
     z-index:3;
 }
 
-.pics
-{
-    display: flex wrap;
-    flex-direction: row;
-    gap: 50vw;
-}
 
 
 #left
