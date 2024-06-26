@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "css/main.css">
-    <title>Portfolio</title>
+    <title>Bella</title>
     <script src="https://kit.fontawesome.com/189dfeed8b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,30 +18,94 @@
         </div>
 
         <nav class = "menu">
-            <div class="menu-branding">
-                <div class="portrait">  </div>
-            </div>
             <ul class ="menu-nav">
-                <li class="nav-item current"> <a href="index.html" class="nav-link"> Home </a> </li>
-                <li class="nav-item"> <a href="about.html" class="nav-link"> About me </a> </li>
-                <li class="nav-item"> <a href="work.htmlk" class="nav-link"> My work </a> </li>
-                <li class="nav-item"> <a href="contact.html" class="nav-link"> Contact me </a> </li>
+                <li class="nav-item current"> <a href="#first-page" class="nav-link"> Home </a> </li>
+                <li class="nav-item"> <a href="#second-page" class="nav-link"> Bella </a> </li>
+                <li class="nav-item"> <a href="#third-page" class="nav-link"> Examples </a> </li>
+                <li class="nav-item"> <a href="#fourth-page" class="nav-link"> Mission </a> </li>
             </ul>
         </nav>
     </header>
 
     <main id ="home">
-        <h1 class="lg-heading">John <span class="text-secondary">Doe</span> </h1>
-        <h2 class="sm-heading">Web Developer, Programmer, Designer, Entrepreneur</h2>
-        <div class="icons">
-            <a href="#!"> <i class="fab fa-twitter fa-2x"></i> </a>
-            <a href="#!"> <i class="fab fa-facebook fa-2x"></i> </a>
-            <a href="#!"> <i class="fab fa-linkedin fa-2x"></i> </a>
-            <a href="#!"> <i class="fab fa-github fa-2x"></i> </a>
+        <div id="first-page" class = "page">
+            <h1 class="lg-heading"><span class = "text-secondary">Welcome</span> to my site</h1>
+            
+            <div class="grid">
+                <h2 class="sm-heading" id ="part1">Are you a <span class = "text-secondary">dog lover?</span></h2>
+                <h2 class="sm-heading" id = "part2">Because if so, I want to <span class = "text-secondary">show you something</span></h2>
+                
+                <h2 class = "sm-heading" id = "part3">Something I think you'd be <span class = "text-secondary">very</span> interested in</h3>
+            </div>
 
+            <i class="fa-solid fa-chevron-down down-button"></i>
         </div>
-    </main>
 
+        <div class="page" id = "second-page">
+            <i class="fa-solid fa-chevron-up up-button"></i>
+            <h1>The <span class="text-secondary">Bella</span> </h1>
+            <h2>What is the Bella?</h2>
+            <div class="grid">
+                <ul id = "bella-explnanation">
+                    <li id = "li1">
+                        Bellaing, or doing the Bella, is the act of a dog being upside down with a look on their face like they're having the time of their life
+                    </li>
+                    <li class = "indent" id = "li2">Named after Bella the golden retriever in this demonstrative video</li>
+                    <br>
+                    <li class =  "rest">It is important to note that a dog being upside down as a trick or for belly rubs is not a Bella</li>
+                    <li class="indent rest">A true Bella is being done for its own sake or because the doggo is just a goofball</li>
+                    <br>
+                    <li class =  "rest">Some traits of Bellaing include: </li>
+                    <li class="indent rest">Being completely adorable</li>
+                    <li class="indent rest">Usually, but not always, done by goldens</li>
+                    <li class="indent rest">Big upside-down smile on the good boy's/girl's face</li>
+                </ul>
+                <video src="../assets/Bella-original.mp4" id="video" controls></video>
+            </div>
+            <i class="fa-solid fa-chevron-down down-button"></i>
+        </div>
+        
+        <div class="page" id = "third-page">
+            <i class="fa-solid fa-chevron-up up-button"></i>
+                <i class="fa-solid fa-chevron-up left-button" id = "left"></i>
+                <i class="fa-solid fa-chevron-up right-button" id = "right"></i>
+            <h1>Some more examples of Bellas</h1>
+                <div class="pics">
+                    <div class="image-container small">
+                        <img class="gallery-image" src="../assets/Bella-image1.jpg">
+                    </div>
+                    <div class="image-container">
+                        <img class="gallery-image" src="../assets/Bella-image2.png">
+                    </div>
+                    <div class="image-container">
+                        <img class="gallery-image" src="../assets/Bella-image3.png">
+                    </div>
+                    <div class="image-container">
+                        <img class="gallery-image" src="../assets/Bella-image4.png">
+                    </div>
+                    <div class="image-container small">
+                        <img class="gallery-image" src="../assets/Bella-image5.png">
+                    </div>
+                    
+                </div>
+
+            <i class="fa-solid fa-chevron-down down-button"></i>
+        </div>
+
+        <div class="page" id = "fourth-page">
+            <i class="fa-solid fa-chevron-up up-button"></i>
+
+            <h1 class="lg-heading"><span class = "text-secondary">So what's</span> the point?</h1>
+            <br>
+            
+                <h2 class="sm-heading" id ="part1">Make the term Bella <span class = "text-secondary"> go mainstream!</span></h2>
+                <h2 class="sm-heading" id = "part2">It has already conquered my discussions with my friends. <span class = "text-secondary"> The next step is yours!</span></h2>
+                
+                <h2 class = "sm-heading" id = "part3">And finally, the whole <span class = "text-secondary">world!</span></h3>
+            
+        </div>
+
+    </main>
     <script src="js/main.js"></script>
 </body>
 </html>
