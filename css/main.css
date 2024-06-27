@@ -339,8 +339,10 @@ video {
 
 @media screen and (max-width: 500px) {
   .up-button {
+    color: red;
     display: none; }
   .down-button {
+    color: red;
     display: none; }
   menu {
     opacity: 1; }
