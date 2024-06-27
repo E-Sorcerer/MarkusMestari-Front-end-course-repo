@@ -130,7 +130,7 @@ main {
     margin-top: 20vh; }
   main #first-page .grid {
     display: grid;
-    grid-template-areas: 'p1 p1 . . .' '. p2 p2 p2 .' '. . p3 p3 p3'; }
+    grid-template-areas: 'p1 p1 p1 . .' '. p2 p2 p2 .' '. . p3 p3 p3'; }
     main #first-page .grid #part1 {
       grid-area: p1; }
     main #first-page .grid #part2 {
@@ -154,7 +154,6 @@ main {
     margin: auto;
     padding-bottom: 5vh; }
   #second-page .indent {
-    margin-left: 7.5vh;
     color: #eece1a; }
 
 #third-page {
@@ -254,7 +253,9 @@ video {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
-    margin-bottom: 10vh; } }
+    margin-bottom: 10vh; }
+  #second-page .indent {
+    margin-left: 7.5vh; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .lg-heading {
@@ -265,7 +266,9 @@ video {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
-    margin-bottom: 10vh; } }
+    margin-bottom: 10vh; }
+  #second-page .indent {
+    margin-left: 7.5vh; } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   .menu-nav {
@@ -278,20 +281,15 @@ video {
   .sm-heading {
     font-size: 1.5rem; }
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 5vh; }
   #second-page {
-    padding: 0; }
+    padding: 2px; }
     #second-page h1 {
       padding-top: 12vh;
       font-size: 3rem; }
     #second-page h2 {
       text-align: center;
       padding-top: 5vh; }
-    #second-page ul {
-      margin: 0;
-      padding: 0; }
-    #second-page li {
-      font-size: 1rem; }
     #second-page .grid {
       max-height: 100vh;
       display: grid;
@@ -300,6 +298,16 @@ video {
       grid-gap: 2px;
       float: left;
       grid-template-areas: 'li1 vid' 'li vid' 'li vid' 'li vid' 'li vid'; }
+      #second-page .grid ul {
+        margin: 0;
+        padding: 0;
+        max-height: 80vh;
+        list-style: none; }
+      #second-page .grid li {
+        font-size: 0.75rem; }
+      #second-page .grid .indent {
+        margin-left: 4vh;
+        text-decoration: underline; }
       #second-page .grid #li1 {
         grid-area: li1; }
       #second-page .grid #li2 {
@@ -340,9 +348,12 @@ video {
   .sm-heading {
     font-size: 1.5rem; }
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 5vh; }
   #second-page {
     padding: 0; }
+    #second-page .indent {
+      margin-left: 2vh;
+      color: red; }
     #second-page h1 {
       margin-left: 0.2rem;
       padding-top: 4px;
@@ -354,7 +365,8 @@ video {
       margin: 0;
       padding: 0; }
     #second-page li {
-      font-size: 1rem; }
+      font-size: 0.75rem;
+      list-style: none; }
     #second-page .grid {
       max-height: 100vh;
       display: grid;
@@ -363,6 +375,10 @@ video {
       grid-gap: 2px;
       float: left;
       grid-template-areas: 'li1 vid' 'li vid' 'li vid' 'li vid' 'li vid'; }
+      #second-page .grid ul {
+        max-height: 80vh; }
+      #second-page .grid li {
+        font-size: 0.75rem; }
       #second-page .grid #li1 {
         grid-area: li1; }
       #second-page .grid #li2 {
