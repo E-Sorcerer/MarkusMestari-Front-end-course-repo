@@ -367,7 +367,7 @@ video {
       font-size: 0.75rem;
       list-style: none; }
     #second-page .grid {
-      max-height: 100vh;
+      max-height: 70vh;
       display: grid;
       margin: 5vh, 0, 0, 0;
       padding: 2px;
@@ -376,11 +376,12 @@ video {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr; }
       #second-page .grid ul {
-        max-height: 80vh; }
+        max-height: 70vh; }
       #second-page .grid li {
         font-size: 0.75rem; }
       #second-page .grid video {
-        max-height: 60vh; }
+        max-height: 60vh;
+        padding-bottom: 0; }
     #second-page br {
       display: none; }
   #third-page {
