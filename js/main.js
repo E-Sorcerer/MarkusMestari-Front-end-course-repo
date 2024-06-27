@@ -81,7 +81,6 @@ function scrollUp()
 
 function scrollToPage(pg)
 {
-    console.log("Scrolling to page: " + pg);
     if (pg < 0)
     {
         pg = 0
@@ -90,13 +89,11 @@ function scrollToPage(pg)
     {
         pg = pages.length -1
     }
-
     const targetPage = pages[pg];
     if (targetPage)
     {
-        console.log("Target page found");
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
-        setCurrentPage(currentPage);
+        currentPage = pg;
     }
 }
 
@@ -179,7 +176,6 @@ document.addEventListener('wheel', function(event) {
     event.preventDefault();
     if (!isScrolling) // Wait for the transition to finish in order to not cause weird bugginess
     { 
-        console.log("In the if");
         isScrolling = true;
         determineScroll(event);
         setTimeout(function() {
@@ -196,7 +192,7 @@ function determineScroll(event)
 
 function setCurrentPage(index)
 {
-    console.log("Setting current page. Index: " + index);
+    
     if (index < 0)
     {
         index = 0;
