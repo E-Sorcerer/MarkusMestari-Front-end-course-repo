@@ -339,9 +339,9 @@ video {
 
 @media screen and (max-width: 500px) {
   .up-button {
-    top: 3vh; }
+    top: 4vh; }
   .down-button {
-    bottom: 3vh; }
+    bottom: 4vh; }
   menu {
     opacity: 1; }
   .menu-nav {
@@ -361,7 +361,7 @@ video {
     #second-page .indent {
       margin-left: 2vh; }
     #second-page h1 {
-      padding-top: 5vh; }
+      padding-top: 8vh; }
     #second-page h2 {
       margin-top: 0.5rem;
       margin-left: 0.2rem;
