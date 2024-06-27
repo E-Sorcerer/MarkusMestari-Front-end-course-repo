@@ -339,9 +339,9 @@ video {
 
 @media screen and (max-width: 500px) {
   .up-button {
-    top: 5vh; }
+    top: 3vh; }
   .down-button {
-    bottom: 20vh; }
+    bottom: 3vh; }
   menu {
     opacity: 1; }
   .menu-nav {
@@ -388,8 +388,6 @@ video {
       #second-page .grid video {
         width: 50vw;
         height: auto; }
-    #second-page .down-button {
-      bottom: 2rem; }
     #second-page br {
       display: none; }
   #third-page {
