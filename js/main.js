@@ -94,7 +94,7 @@ function scrollToPage(pg)
     if (targetPage)
     {
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
-        currentPage = pg;
+        setCurrentPage(pg);
         console.log("Current page after: " + currentPage);
     }
 }
