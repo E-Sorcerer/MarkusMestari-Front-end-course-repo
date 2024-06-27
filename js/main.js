@@ -81,6 +81,7 @@ function scrollUp()
 
 function scrollToPage(pg)
 {
+    console.log("Scrolling to page: " + pg);
     if (pg < 0)
     {
         pg = 0
@@ -93,6 +94,7 @@ function scrollToPage(pg)
     const targetPage = pages[pg];
     if (targetPage)
     {
+        console.log("Target page found");
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
         setCurrentPage(currentPage);
     }
@@ -194,7 +196,7 @@ function determineScroll(event)
 
 function setCurrentPage(index)
 {
-    
+    console.log("Setting current page. Index: " + index);
     if (index < 0)
     {
         index = 0;
