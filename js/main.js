@@ -89,13 +89,13 @@ function scrollToPage(pg)
     {
         pg = pages.length -1
     }
+
     const targetPage = pages[pg];
     if (targetPage)
     {
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
-        currentPage = pg;
+        setCurrentPage(currentPage);
     }
-    setCurrentPage(pg);
 }
 
 function setGallery(direction)
@@ -188,11 +188,7 @@ document.addEventListener('wheel', function(event) {
 
 function determineScroll(event)
 {
-    console.log(currentPage);
-
-        scrollToPage(currentPage + Math.sign(event.deltaY));
-      
-       
+    scrollToPage(currentPage + Math.sign(event.deltaY));
 }
 
 
