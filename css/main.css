@@ -339,9 +339,9 @@ video {
 
 @media screen and (max-width: 500px) {
   .up-button {
-    visibility: hidden; }
+    display: none; }
   .down-button {
-    visibility: hidden; }
+    display: none; }
   menu {
     opacity: 1; }
   .menu-nav {
