@@ -184,32 +184,6 @@ main {
   padding: 4rem;
   height: 100vh; }
 
-.down-button {
-  position: absolute;
-  right: 50vw;
-  left: auto;
-  bottom: 1rem;
-  border: solid white 2px;
-  border-radius: 50%;
-  z-index: 3; }
-  .down-button:hover {
-    transition: all 0.5s ease-out;
-    color: #eece1a;
-    border-color: #eece1a; }
-
-.up-button {
-  position: absolute;
-  right: 50vw;
-  left: auto;
-  top: 1rem;
-  border: solid white 2px;
-  border-radius: 50%;
-  z-index: 3; }
-  .up-button:hover {
-    transition: all 0.5s ease-out;
-    color: #eece1a;
-    border-color: #eece1a; }
-
 #left {
   rotate: -90deg; }
 
@@ -256,9 +230,57 @@ video {
     grid-gap: 4rem;
     margin-bottom: 10vh; }
   #second-page .indent {
-    margin-left: 7.5vh; } }
+    margin-left: 7.5vh; }
+  .down-button {
+    position: absolute;
+    right: 50vw;
+    left: auto;
+    bottom: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+    z-index: 3; }
+    .down-button:hover {
+      transition: all 0.5s ease-out;
+      color: #eece1a;
+      border-color: #eece1a; }
+  .up-button {
+    position: absolute;
+    right: 50vw;
+    left: auto;
+    top: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+    z-index: 3; }
+    .up-button:hover {
+      transition: all 0.5s ease-out;
+      color: #eece1a;
+      border-color: #eece1a; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .down-button {
+    position: absolute;
+    right: 50vw;
+    left: auto;
+    bottom: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+    z-index: 3; }
+    .down-button:hover {
+      transition: all 0.5s ease-out;
+      color: #eece1a;
+      border-color: #eece1a; }
+  .up-button {
+    position: absolute;
+    right: 50vw;
+    left: auto;
+    top: 1rem;
+    border: solid white 2px;
+    border-radius: 50%;
+    z-index: 3; }
+    .up-button:hover {
+      transition: all 0.5s ease-out;
+      color: #eece1a;
+      border-color: #eece1a; }
   .lg-heading {
     font-size: 6rem; }
   #second-page .grid {
@@ -320,6 +342,30 @@ video {
         max-height: 60vh; }
     #second-page br {
       display: none; }
+    #second-page .down-button {
+      position: absolute;
+      right: 50vw;
+      left: auto;
+      bottom: 1rem;
+      border: solid white 2px;
+      border-radius: 50%;
+      z-index: 3; }
+      #second-page .down-button:hover {
+        transition: all 0.5s ease-out;
+        color: #eece1a;
+        border-color: #eece1a; }
+    #second-page .up-button {
+      position: absolute;
+      right: 50vw;
+      left: auto;
+      top: 1rem;
+      border: solid white 2px;
+      border-radius: 50%;
+      z-index: 3; }
+      #second-page .up-button:hover {
+        transition: all 0.5s ease-out;
+        color: #eece1a;
+        border-color: #eece1a; }
   #third-page {
     background-color: #333; }
     #third-page h1 {
