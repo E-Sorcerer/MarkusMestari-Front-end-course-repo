@@ -15,7 +15,6 @@ const navItems = document.querySelectorAll('.nav-item');
 const navLinks = document.querySelectorAll('.nav-link');
 const pages = document.querySelectorAll('.page');
 
-let timer = new Date();
 let currentPage = 0;
 
 let showMenu = false;
@@ -81,6 +80,8 @@ function scrollUp()
 
 function scrollToPage(pg)
 {
+    console.log("Current page before: " + currentPage);
+    console.log("Scrolling to page " + pg);
     if (pg < 0)
     {
         pg = 0
@@ -93,7 +94,8 @@ function scrollToPage(pg)
     if (targetPage)
     {
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
-        currentPage = pg;
+        setCurrentPage(pg);
+        console.log("Current page after: " + currentPage);
     }
 }
 
@@ -176,7 +178,6 @@ document.addEventListener('wheel', function(event) {
     event.preventDefault();
     if (!isScrolling) // Wait for the transition to finish in order to not cause weird bugginess
     { 
-        console.log("In the if");
         isScrolling = true;
         determineScroll(event);
         setTimeout(function() {
@@ -187,22 +188,7 @@ document.addEventListener('wheel', function(event) {
 
 function determineScroll(event)
 {
-    console.log(currentPage);
-
-        scrollToPage(currentPage + Math.sign(event.deltaY));
-      
-    /*
-    if (event.deltaY < 0)
-    {
-        scrollUp();
-    }
-    else if (event.deltaY > 0)
-    {
-        scrollDown();
-    }
-    
- */
-       
+    scrollToPage(currentPage + Math.sign(event.deltaY));
 }
 
 
