@@ -359,7 +359,7 @@ video {
       right: 50vw;
       left: auto;
       top: 1rem;
-      border: solid white 2px;
+      border: solid red 2px;
       border-radius: 50%;
       z-index: 3; }
       #second-page .up-button:hover {
