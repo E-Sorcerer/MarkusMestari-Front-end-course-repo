@@ -382,6 +382,8 @@ video {
       #second-page .grid video {
         width: 50vw;
         height: auto; }
+    #second-page .down-button {
+      bottom: 2rem; }
     #second-page br {
       display: none; }
   #third-page {
