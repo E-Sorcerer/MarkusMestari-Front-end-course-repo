@@ -95,6 +95,7 @@ function scrollToPage(pg)
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
         currentPage = pg;
     }
+    setCurrentPage(pg);
 }
 
 function setGallery(direction)
@@ -191,17 +192,6 @@ function determineScroll(event)
 
         scrollToPage(currentPage + Math.sign(event.deltaY));
       
-    /*
-    if (event.deltaY < 0)
-    {
-        scrollUp();
-    }
-    else if (event.deltaY > 0)
-    {
-        scrollDown();
-    }
-    
- */
        
 }
 
