@@ -379,10 +379,7 @@ video {
         max-height: 80vh; }
       #second-page .grid li {
         font-size: 0.75rem; }
-      #second-page .grid .rest {
-        grid-area: li; }
       #second-page .grid video {
-        grid-area: vid;
         max-height: 60vh; }
     #second-page br {
       display: none; }
