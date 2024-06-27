@@ -338,6 +338,10 @@ video {
         width: 90vw; } }
 
 @media screen and (max-width: 500px) {
+  .up-button {
+    top: 5vh; }
+  .down-button {
+    bottom: 5vh; }
   menu {
     opacity: 1; }
   .menu-nav {
