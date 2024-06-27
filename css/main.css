@@ -379,7 +379,8 @@ video {
         font-size: 0.75rem;
         list-style: none; }
       #second-page .grid video {
-        max-width: 50vw;
+        width: 50vw;
+        height: auto;
         padding-bottom: 0; }
     #second-page br {
       display: none; }
