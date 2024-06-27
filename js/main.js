@@ -15,7 +15,6 @@ const navItems = document.querySelectorAll('.nav-item');
 const navLinks = document.querySelectorAll('.nav-link');
 const pages = document.querySelectorAll('.page');
 
-let timer = new Date();
 let currentPage = 0;
 
 let showMenu = false;
@@ -81,6 +80,8 @@ function scrollUp()
 
 function scrollToPage(pg)
 {
+    console.log("Current page before: " + currentPage);
+    console.log("Scrolling to page " + pg);
     if (pg < 0)
     {
         pg = 0
@@ -94,6 +95,7 @@ function scrollToPage(pg)
     {
         targetPage.scrollIntoView({behavior: 'smooth', block: 'end'});
         currentPage = pg;
+        console.log("Current page after: " + currentPage);
     }
 }
 
