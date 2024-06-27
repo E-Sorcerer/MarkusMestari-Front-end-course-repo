@@ -339,9 +339,9 @@ video {
 
 @media screen and (max-width: 500px) {
   .up-button {
-    top: 4vh; }
+    visibility: hidden; }
   .down-button {
-    bottom: 6vh; }
+    visibility: hidden; }
   menu {
     opacity: 1; }
   .menu-nav {
@@ -403,7 +403,7 @@ video {
         max-width: 100vw;
         justify-content: center; }
       #third-page .image-container.small {
-        left: -7vw;
+        left: -3vw;
         right: auto;
         width: 90vw; }
     #third-page .pics {
