@@ -356,18 +356,13 @@ video {
     #second-page h1 {
       padding-top: 5vh; }
     #second-page h2 {
+      margin-top: 0.5rem;
       margin-left: 0.2rem;
       padding-top: 4px;
       font-size: 2rem;
       float: left; }
-    #second-page ul {
-      margin: 0;
-      padding: 0; }
-    #second-page li {
-      font-size: 0.75rem;
-      list-style: none; }
     #second-page .grid {
-      max-height: 70vh;
+      max-height: 60vh;
       display: grid;
       margin: 5vh, 0, 0, 0;
       padding: 2px;
@@ -376,11 +371,15 @@ video {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr; }
       #second-page .grid ul {
+        margin: 0;
+        padding: 0;
         max-height: 70vh; }
       #second-page .grid li {
-        font-size: 0.75rem; }
+        font-size: 0.75rem;
+        font-size: 0.75rem;
+        list-style: none; }
       #second-page .grid video {
-        max-height: 60vh;
+        max-width: 50vw;
         padding-bottom: 0; }
     #second-page br {
       display: none; }
