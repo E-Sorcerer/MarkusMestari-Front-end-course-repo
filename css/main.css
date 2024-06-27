@@ -190,7 +190,8 @@ main {
   left: auto;
   bottom: 1rem;
   border: solid white 2px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 3; }
   .down-button:hover {
     transition: all 0.5s ease-out;
     color: #eece1a;
@@ -293,7 +294,7 @@ video {
     #second-page .grid {
       max-height: 100vh;
       display: grid;
-      margin: 5vh, 0, 0, 5vh;
+      margin: 5vh, 0, 0, 0vh;
       padding: 0;
       grid-gap: 2px;
       float: left;
@@ -380,8 +381,7 @@ video {
         list-style: none; }
       #second-page .grid video {
         width: 50vw;
-        height: auto;
-        padding-bottom: 0; }
+        height: auto; }
     #second-page br {
       display: none; }
   #third-page {
