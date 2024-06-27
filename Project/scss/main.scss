@@ -170,40 +170,6 @@ main {
 
 }
 
-.down-button
-{
-    position:absolute;
-    right:50vw;
-    left:auto;
-    bottom: 1rem;
-    border: solid white 2px;
-    border-radius: 50%;
-
-    &:hover{
-        @include easeOut;
-        color: $secondary-color;
-        border-color: $secondary-color;
-    }
-}
-
-.up-button
-{
-    position:absolute;
-    right:50vw;
-    left:auto;
-    top: 1rem;
-    border: solid white 2px;
-    border-radius: 50%;
-
-    &:hover{
-        @include easeOut;
-        color: $secondary-color;
-        border-color: $secondary-color;
-    }
-    z-index:3;
-}
-
-
 
 #left
 {
